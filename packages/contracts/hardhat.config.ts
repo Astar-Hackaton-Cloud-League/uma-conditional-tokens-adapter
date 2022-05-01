@@ -37,7 +37,7 @@ const config: HardhatUserConfig = {
         matic: { accounts, ...getRemoteNetworkConfig("matic"), gasPrice: 100000000000 },
         mainnet: { accounts, ...getRemoteNetworkConfig("mainnet") },
         shibuya: { accounts, ...getRemoteNetworkConfig("shibuya") },
-        astarMainnet: { accounts, ...getRemoteNetworkConfig("astarMainnet") ,}
+        astarMainnet: { accounts, ...getRemoteNetworkConfig("astarMainnet") },
     },
     paths: {
         artifacts: "./artifacts",
@@ -69,9 +69,9 @@ const config: HardhatUserConfig = {
         gasPrice: 100,
         excludeContracts: ["Mock", "ERC20"],
     },
-    etherscan: {
-        apiKey: etherscanApiKey,
-    },
+    // etherscan: {
+    //     apiKey: etherscanApiKey,
+    // },
 };
 
 export default config;
